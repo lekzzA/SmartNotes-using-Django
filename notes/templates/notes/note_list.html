@@ -1,5 +1,8 @@
 {% extends "base.html"%} {%block content%}
 <h1 class="my-5">These are the notes:</h1>
+<div>
+  <a href="{%url 'note.new'%}" class="btn btn-primary text-left">+</a>
+</div>
 <div class="row row-cols3 g-2">
   {%for note in notes%}
   <div class="col">
