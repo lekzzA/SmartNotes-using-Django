@@ -9,6 +9,7 @@ from django.views.generic import CreateView,ListView,DetailView, UpdateView
 from django.views.generic.edit import DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin
 
+
 class NotesDeleteView(DeleteView):
     model=Notes
     success_url = '/smart/notes'
