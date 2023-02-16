@@ -4,4 +4,8 @@
 
   <h4>{{note.text}}</h4>
 </div>
+
+<a href="{% url 'note.list'%}" class="btn btn-secondary">Back</a>
+<a href="{% url 'note.update' pk=note.id%}" class="btn btn-secondary">Edit</a>
+<a href="{% url 'note.delete' pk=note.id%}" class="btn btn-danger">Delete</a>
 {%endblock%}
